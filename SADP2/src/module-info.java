@@ -1,0 +1,2 @@
+module sadP2 {
+}
