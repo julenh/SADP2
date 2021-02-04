@@ -1,8 +1,9 @@
 package weka.api;
-import weka.*;
-import weka.api.*;
-import weka.core.*;
-import weka.core.converterUtils.DataSource;
+
+import weka.core.Instances;
+import weka.core.converters.ConverterUtils.DataSource;
+
+import java.io.*;
 
 public class Practica2 {
 
@@ -13,5 +14,6 @@ public class Practica2 {
 	
 	public void cargarDatos() {
 		DataSource source = new DataSource("/adult.train.arff");
+		Instances dataset = new source.getDataset();
 	}
 }
